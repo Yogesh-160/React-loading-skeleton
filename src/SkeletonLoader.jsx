@@ -1,7 +1,6 @@
 import React from 'react';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import { SkeletonTheme } from 'react-loading-skeleton';
 
 const SkeletonLoader = ({ type }) => {
   let content = null;
@@ -52,7 +51,7 @@ const SkeletonLoader = ({ type }) => {
           <p>
             <Skeleton style={{marginBottom:'1rem'}} count={4} height={50} width={200} />
           </p>
-          
+          <h2><Skeleton height={40} width={300}/></h2>
         </div>
       );
   }
